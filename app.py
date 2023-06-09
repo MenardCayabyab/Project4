@@ -6,9 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def survey():
     if request.method == 'POST':
-        # retrieve data from the form
         data = {
-            'Employee ID': request.form.get('employee_id'),
             'Date of Joining': request.form.get('date_of_joining'),
             'Gender': request.form.get('gender'),
             'Company Type': request.form.get('company_type'),
@@ -16,13 +14,10 @@ def survey():
             'Designation': request.form.get('designation'),
             'Resource Allocation': request.form.get('resource_allocation'),
             'Mental Fatigue Score': request.form.get('mental_fatigue_score'),
-            'Burn Rate': request.form.get('burn_rate')
         }
         
-        # transform the data into a pandas DataFrame
         df = pd.DataFrame([data])
         
-        # save the DataFrame to a csv file
         df.to_csv('survey_data.csv', mode='a', index=False)
         
         return 'Thank you for your participation!'
