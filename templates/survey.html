@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="date_of_joining">When did you start working at your current company? (YYYY-MM-DD):</label><br>
+        <input type="date" id="date_of_joining" name="date_of_joining" required><br>
+
+        <label for="gender">What is your gender?</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <label for="company_type">What industry does your company work in?</label><br>
+        <select id="company_type" name="company_type">
+          <option value="Service">Service</option>
+          <option value="Product">Product</option>
+        </select><br>
+
+        <label for="wfh_setup_available">Are you able to work from home?</label><br>
+        <input type="radio" id="yes" name="wfh_setup_available" value="Yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="wfh_setup_available" value="No">
+        <label for="no">No</label><br>
+
+        <label for="designation">On a scale of 1-5, how high is your job within the company hierarchy?</label><br>
+        <input type="number" id="designation" name="designation" min="1" max="5" required><br>
+
+        <label for="resource_allocation">How many hours do you work per workday?</label><br>
+        <input type="number" id="resource_allocation" name="resource_allocation" min="1.0" max="10.0" step="0.1" required><br>
+
+        <label for="mental_fatigue_score">From a scale of 0.0 to 10.0, how mentally fatigued do you feel from the past week?</label><br>
+        <input type="number" id="mental_fatigue_score" name="mental_fatigue_score" min="0.0" max="10.0" step="0.1" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
