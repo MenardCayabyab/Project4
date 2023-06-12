@@ -3,7 +3,7 @@
 ## Project Background
 In this project, we are using Machine Learning to analyze employee burnout and the various factors that lead to burnout and the long term effects of burnout categorized into various themes such as gender, company type, resource allocation, etc. The main questions being analyzed through this project about employee burnout are:
 
-- What kind of employees are more susceptable to burnout?
+- What kind of employees are more susceptible to burnout?
 - Is there a way to predict burnout beforehand?
 - What factors correlate more strongly towards burnout? (gender, company type, resource allocation, etc.)
 - Do the factors listed above correlate to each other?
