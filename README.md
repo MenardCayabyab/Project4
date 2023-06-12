@@ -1,4 +1,4 @@
-# Machine Learning Analysis of Empolyee Burnout 
+# Machine Learning Analysis of Employee Burnout 
 
 ## Project Background
 In this project, we are using Machine Learning to analyze employee burnout and the various factors that lead to burnout and the long term effects of burnout categorized into various themes such as gender, company type, resource allocation, etc. The main questions being analyzed through this project about employee burnout are:
